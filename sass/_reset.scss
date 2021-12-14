@@ -1,0 +1,92 @@
+
+//定义颜色
+$allBgColor:#eef1f6;//整站page页面的背景色 baozhang.baidu.com
+$footBgColor:#2d3236;
+$headerColor:#ffffff;//顶部导航的背景色
+$mainColor:#ef494d;//整站的主色调
+$fontColor:#333;//主文字的颜色
+$fontColorSec:#999;//浅灰色，作为备注类的文字使用
+$footerColor:#2d3237;//footer的背景颜色
+$containerColor:#f8f9fa;
+$borderBottomColor:1px solid #e6e6e6;
+
+//定义文字排版
+$lineHeight:1.5;
+$fontSize:10px;//起始文字大小，后面按它的倍数，1.4 - 1.6 - 2.4
+
+
+//统一按钮样式
+%mybtn{
+	text-align: center;
+	width: 140px;
+	height: 36px;
+	box-sizing: border-box;
+	line-height: 34px;
+	font-size: 16px;
+	display: block;
+	border: 1px solid $mainColor;
+}
+
+
+$bordertext:1px solid red;
+//定义常用的样式
+%margin-bottom{
+	margin-bottom:20px;
+}
+
+%fontLine{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break:break-all;
+}
+
+
+%imgBox{/*图片的框效果：超出隐藏、圆角*/
+	overflow: hidden;
+	border-radius: 5px;
+}
+//统一a标签的样式
+%aSteyle{
+	text-decoration: none;
+	&:hover{
+		color:$fontColor;
+	}
+}
+
+
+
+//清除float浮动的问题
+@mixin clearFloat{
+	content:"";
+	display:block;
+	clear:both;
+}
+//定义重复兼容不同浏览器的重复样式
+@mixin myflex{
+	display:-webkit-flex;
+	display:flex;
+}
+@mixin backgroundSize($bgwidth,$bgheight){
+	background-size:$bgwidth $bgheight;
+	-moz-background-size:$bgwidth $bgheight;
+}
+@mixin borderRadius($radiusNum:3px){
+	border-radius:$radiusNum;
+	-webkit-border-radius:$radiusNum;
+	-moz-border-radius:$radiusNum;
+	-o-border-radius:$radiusNum;
+}
+@mixin moveImg(){
+	transform: scale(1.03);
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+}
+
+@mixin theColumn($num){
+	column-count:$num;
+	-moz-column-count:$num; /* Firefox */
+	-webkit-column-count:$num; /* Safari and Chrome */
+}

@@ -1,0 +1,17 @@
+@import "reset";
+.adPicBox{
+	@include myflex;
+	flex-direction:column;
+	align-items: center;
+	margin: 0 0 20px;
+}
+.adPicBox .adPic{
+	@extend %margin-bottom;
+	background-color: #fafafa;
+}
+.pulishInfo{
+	color: $fontColorSec!important;
+	a:hover{
+		color:$mainColor!important;
+	}
+}

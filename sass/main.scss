@@ -1,0 +1,35 @@
+//主要css样式
+@import "_reset";
+@import "_header-footer";
+@import "_index";
+@import "_news";
+@import "_contact";
+@import "jyStyle";
+
+/*以下为全局的css语句*/
+p, dl, dt, dd,ol, ul,li,a,header,body,span,div,section,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+html,body{
+	font-size:$fontSize*1.4;
+	overflow-x:hidden;
+	color:$fontColor;
+	background-color:$allBgColor;
+}
+
+li{
+	list-style:none;
+}
+a{
+	color:$fontColor;
+	text-decoration: none;
+	&:hover{
+		font-weight:500px;
+		color:$mainColor;
+	}
+}
+.container{
+	margin:0 auto;
+	//border:$bordertext;
+}

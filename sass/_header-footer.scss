@@ -1,0 +1,116 @@
+
+header{
+	height:71px;
+	background-color:$headerColor;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:1000;
+	box-shadow:1px 1px 15px rgba(0,0,0,.1);
+	
+}
+.logo a{
+	//display:inline-block;
+	background:url(https://www.laptin.cn/static/images/logo.png) no-repeat;
+	height:50px;
+	width:200px;
+	@include backgroundSize(200px,50px);
+	float:left;
+	margin-top:(71px-50px)/2;
+	overflow:hidden;
+	
+}
+nav ul {
+	@include myflex;
+	flex-direction:row;
+	justify-content:flex-start;
+	li{
+		line-height:71px;
+		padding:0 15px;
+		span{
+			@include borderRadius(5px);
+			background-color:$mainColor;
+			color:white;
+			display:inline-block;
+			line-height:28px;
+			padding:0 10px;
+			}
+		:last-child a{color:white;}
+		&:last-child{
+			flex-grow:2;
+			align-self:flex-end;
+			text-align:right;
+		}
+	}
+
+}
+
+
+//footer部分
+footer{
+	margin-top: 20px;
+	background-color: $footerColor;
+	.copyright{
+		@include myflex;
+		justify-content: space-between;
+		padding: 20px 0;
+		font-size: 12px;
+		color: #666;
+		a{color: #666;}
+		div:last-child a{
+			background-color: $fontColorSec;
+			display: inline-block;
+			@include borderRadius(50%);
+			height: 20px;
+			width: 20px;
+			opacity: .5;
+			text-align: center;
+			img{
+				vertical-align: middle;				
+			}
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+.footerContent{
+	@include myflex;
+	justify-content: space-between;
+	padding-top: 50px;
+	color:white;
+	border-bottom: 1px solid #3b424a;
+	p{
+		font-size: $fontSize*1.6;
+		margin-bottom: 30px;
+	}
+	li{
+		line-height: 2.0;
+		a{
+			color: $fontColorSec;
+			&:hover{
+				color:$mainColor;
+			}
+		}
+		&:last-child{
+			margin-bottom: 40px;
+		}
+	}
+	div:nth-child(5){
+		@include myflex;
+		p{
+			font-size: 12px;
+			color: #cecece;
+			text-align: center;
+		}
+		img{
+			width: 100px;
+		}
+		div{
+			margin-left: 10px;
+		}
+	} 
+}
+
+

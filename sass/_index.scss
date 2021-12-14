@@ -1,0 +1,467 @@
+
+.bannerList{
+	height: 500px;
+	overflow: hidden;
+	ul{
+		@include myflex;
+	}
+}
+
+
+.yewuWrapper{
+	padding: 0 0 50px;
+	margin-top: 15px;
+	position: relative;
+	z-index: 999;
+}
+.yewuList{
+	//border-radius: 10px;
+	//padding: 30px 0;
+	//background-color: white;
+	.fa-shopping-cart, .fa-sitemap, .fa-user-plus, .fa-pencil-square-o{
+		color: white;
+		opacity: .8;
+		font-size: 68px;
+		position:absolute;
+		left: 50%;
+		//right: 0;
+		top: 50%;
+		//bottom: 0;
+		margin-top: -44px;
+		margin-left: -34px;
+	}
+	div.hoverBox{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		border-radius: 10px;
+		box-sizing: border-box;
+		//background-color: $mainColor;
+		color: white;
+		display:none;
+		p:first-child{
+			font-size: 24px;
+			margin-top: 22.5px;
+		}
+		p:last-child{
+			font-size: 14px;
+			padding: 0 20px;
+			line-height: 20px;
+			opacity: .9;
+			text-align: left;
+			text-justify: inter-ideograph;
+			margin-top: 10px;
+		}
+	}
+	ul{
+		@include myflex;
+		justify-content: space-between;
+		//padding: 0 60px;
+		
+		li{
+			position: relative;
+			height: 200px;
+			//width: 200px;
+			//border:$bordertext;
+			overflow: hidden;
+			box-sizing: border-box;
+			//background-color:rgba(255,255,255,.5);
+			//border-radius: 10px;
+			//color:white;
+			//box-shadow: 0 2px 47px 5px $allBgColor;
+			text-align: center;
+			&:not(:nth-child(1)){
+				margin-left: 20px;
+			}
+			&:after{
+				background-color:black;
+				opacity: .4;
+				height: 35px;
+				display: block;
+				width: 1455px;
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				margin-left: -300px;
+			}
+
+			img{
+				width: 100%;
+				transition: .5s;
+				&:hover{
+					@include moveImg;
+				}
+			}
+			p{
+				font-size: 20px;
+				line-height: 35px;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: -40px;
+				z-index:999;
+				color: white;
+				opacity: .9;
+				&:hover{
+					color: $mainColor;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.productWrapper{
+	background-color: #f8f9fa;
+	padding: 50px 0;
+}
+.proImgList{
+	position: relative;
+	div:first-child ul{
+		@include myflex;
+		justify-content: space-between;
+		}
+	div:nth-child(2) span{
+		width: 60px;
+		height: 60px;
+		display: block;
+		opacity: 0.2;
+		cursor: pointer;
+		&:first-child{
+			position: absolute;
+			top: 30%;
+			left: 8px;
+			background: url(../img/leftIcon.png) no-repeat center center;
+			background-size: 60px 60px;
+		}
+		&:nth-child(2){
+			position: absolute;
+			top: 30%;
+			right: 8px;
+			background: url(../img/rightIcon.png) no-repeat center center;
+			background-size: 60px 60px;
+		}
+	}	
+	}
+
+a.btn_index{ //统一按钮样式
+	@extend %mybtn;
+	margin: 25px auto 0;
+	@include borderRadius(4px);
+	color: $mainColor;
+	&:hover{
+		background-color: $mainColor;
+		color: white;
+		}
+	}
+
+
+.proImgList ul li{
+	> a{
+		display: inline-block;
+		width: 399px;
+		height: 399px;
+		overflow: hidden;
+	}
+	img{
+		width: 100%;
+		transition: 0.5s;
+		&:hover{
+			@include moveImg;
+		}
+	}
+	span{
+		position: absolute;
+		top: 12px;
+		display: inline-block;
+		background-color: $mainColor;
+		height: 35px;
+		width: 35px;
+		color: #fff;
+		text-align: center;
+		font-size: 12px;
+		box-sizing: border-box;
+		z-index: 999;
+	}
+	p{
+		margin-top: 5px;
+	}
+	div{
+		> p:first-child{
+			font-size: 12px;
+			width: 240px;
+			color: $fontColorSec;
+			@extend %fontLine;//不知道为何，它不生效
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			word-break:break-all;
+		}
+		a{
+			color: #3b424a;
+			width: 380px;
+			letter-spacing: 1px;
+		}
+		a:hover{
+			color: $mainColor;
+		}
+	}
+	&:nth-child(1) > span{
+		left: 350px;
+	}
+	&:nth-child(2) > span{
+		left: 752px;
+	}
+	&:nth-child(3) > span{
+		left: 1154px;
+	}
+	&:not(:first-child){margin-left:3px;}
+}
+
+
+
+
+.tipsWrapper{
+	background-image: url(../img/bg2.jpg);
+	background-size:1580px 409px;
+	background-repeat: no-repeat;
+	height: 409px;
+	box-sizing: border-box;
+	padding: 60px 0 0;
+	a.btn_index{
+		margin: 60px auto 0;
+		color: white;
+		border: 1px solid white;
+		&:hover{
+			background-color: white;
+			color: $mainColor;
+		}
+	}
+	h3{
+		font-size: 32px;
+		color: white;
+		font-weight: 500;
+		text-align: center;
+		line-height: 42px;
+		letter-spacing: 2px;
+		margin-bottom: 70px;
+	}
+	ul{
+		@include myflex;
+		justify-content: space-between;
+		padding: 0 80px;
+		line-height: 42px;
+		h4{
+			font-size: 36px;
+			font-weight: 400;
+			text-align: center;
+			color: white;
+			span{
+				font-size: 24px;
+				font-weight: 400;
+			}
+		}
+		p{
+			font-size: 16px;
+			color: white;
+			text-align: center;
+		}
+	}
+}
+
+
+.caseWrapper{
+	margin: 0 0 50px;
+	
+}
+
+.caseList{
+	padding: 70px 0 0;
+	background-color:#f8f9fa;
+	h3{
+		color: $mainColor;
+		text-align: center;
+		font-size: 32px;
+		line-height: 42px;
+		font-weight: 200;
+		margin: 0 0 18px;
+	}
+	p{
+		text-align: center;
+		color: $fontColorSec;
+		font-size: 18px;
+		
+	}
+}
+ul.caseTitle{
+	@include myflex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	li{
+		font-size: 16px;
+		font-weight: 600;
+		margin: 30px 0 20px;
+		cursor: pointer;
+		&:first-child{margin-left:130px;}
+		&:last-child{margin-right: 130px;}
+		&:hover{
+			color: $mainColor;
+		}
+		&:visited{
+			&:after{
+				content: "1111";
+				background-color: $mainColor;
+				line-height: 2px;
+				width: 100px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}
+
+.caseDesc{
+	background-color:#f8f9fa ;
+	@include myflex;
+	justify-content: space-between;
+	padding: 32px 0 0;
+	.caseDescLeft{
+		width: 65%;
+		padding-left:100px;
+		li{
+			margin: 28px 0;
+			position: relative;
+			img{
+				width: 28px;
+				position: absolute;
+				left: -50px;
+				top: 25px;
+			}
+		}
+		div{
+			font-weight: 500;
+			font-size: 18px;
+		}
+		p{
+			font-size: 14px;
+			color: $fontColorSec;
+			line-height: 1.75;
+			padding: 5px 0;
+		}
+	}
+	.caseDescRight{
+		flex-grow: 1;
+		margin: 28px 20px 0;
+		img{
+			width: 100%;
+		}
+	}
+}
+.btn_case{
+	@include myflex;
+	background-color: #f8f9fa;
+	padding:10px 0 32px;
+	justify-content: center;
+	a{
+		display: block;
+		@extend %mybtn;
+		@include borderRadius(4px);
+		&:first-child{
+			margin-right: 15px;
+			background-color: $mainColor;
+			color: white;
+		}
+		&:last-child{
+			margin-left: 15px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.newsWrapper{
+	margin-top: 45px;
+}
+.newsPanel{
+	@include myflex;
+	width: 390px;
+	> div{
+		background-color: white;
+		box-shadow: 0px 0px 10px #ccc;
+		img{
+			height:100%;
+			width:100%;
+			transition: 0.5s;//让图片可以回落
+			&:hover{
+				@include moveImg;
+			}
+		}
+		span{
+			font-size: $fontSize*1.8;
+			line-height: 18px;
+			color: $mainColor;
+		}
+		p{
+			padding: 20px;
+			border-bottom: dotted 1px #cecece;
+			a{
+				float: right;
+				font-size: 12px;
+				color:$fontColorSec;
+				@include clearFloat;
+				&:hover{
+					color: $mainColor;
+				}
+			}
+		}
+		ul{
+			padding:20px;
+			font-size: 12px;
+			li{
+				//margin-bottom: 2px;
+				background: url(../img/newsItem_icon.png) no-repeat left center;
+				
+				a{
+					display: inline-block;
+					width: 253px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					word-break:break-all;
+					margin-left: 18px;
+				}
+				span{
+					font-size: 12px;
+					float: right;
+					color: #cecece;
+					display: inline-block;
+					@include clearFloat;
+				}
+			}
+			
+		}
+	}
+	.newsBox > a{ //让新闻动态的三张图可以有缩放的反应
+		width: 390px;
+		height: 210px;
+		display: inline-block;
+		overflow: hidden;
+	}
+	.newsBox:not(:first-child){
+		margin-left: 15px;
+	}
+}

@@ -1,0 +1,25 @@
+.pages {
+	min-height: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.bgWhite{background-color: #f5f8fa;}
+.bgGray,.bgWhite{height:560px;position:relative;}
+.leftPic,.rightText,.leftText,.rightPic{position: absolute;top:50%;transform:translateY(-50%);}
+.rightText{margin-left: 596px;}
+.rightPic{margin-left: 596px;}
+.leftPic,.leftText{margin-left:80px;}
+.leftText,.rightText{width: 580px;}
+.clearfix{clear: both;}
+h2{font-size: 26px;color:black;}
+.h3{font-size: 16px;line-height: 24px;color:#808080;}
+.features{margin-top:20px;color:#808080;}
+.features li{margin-bottom: 10px;}
+.features li > i{background-image: url(../img/tick_gray.png);width: 20px;height: 20px;margin-right:10px;float:left;}
+.featuresOne,.featuresTwo{float:left;}
+.featuresTwo{margin-left:25px;}
+.newBtn{background-color: #ef494d;padding:0 23px;line-height: 38px!important;font-size: 16px;text-decoration: none;border-radius: 6px;margin-top: 50px!important;}
+a[class="newBtn"]:link{color:white;}
+a[class="newBtn"]:visited{color:white;}
+a[class="newBtn"]:hover{color:white;opacity: 0.8;}
+a[class="newBtn"]:active{color:white;}

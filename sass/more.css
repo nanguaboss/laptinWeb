@@ -1,0 +1,117 @@
+/*额外补充的css样式*/
+.bgWhite{background-color: #f5f8fa;}
+.bgGray,.bgWhite{height:560px;position:relative;}
+.leftPic,.rightText,.leftText,.rightPic{position: absolute;top:50%;transform:translateY(-50%);}
+.rightText{margin-left: 596px;}
+.rightPic{margin-left: 596px;}
+.leftPic,.leftText{margin-left:80px;}
+.leftText,.rightText{width: 580px;}
+.clearfix{clear: both;}
+h2{font-size: 26px;color:black;}
+.h3{font-size: 16px;line-height: 24px;color:#808080;}
+.features{margin-top:20px;color:#808080;}
+.features li{margin-bottom: 10px;}
+.features li > i{background-image: url(../images/tick_gray.png);width: 20px;height: 20px;margin-right:10px;float:left;}
+.featuresOne,.featuresTwo{float:left;}
+.featuresTwo{margin-left:25px;}
+.newBtn{background-color: #ef494d;padding:0 23px;line-height: 38px!important;font-size: 16px;text-decoration: none;border-radius: 6px;margin-top: 50px!important;}
+a[class="newBtn"]:link{color:white;}
+a[class="newBtn"]:visited{color:white;}
+a[class="newBtn"]:hover{color:white;opacity: 0.8;}
+a[class="newBtn"]:active{color:white;}
+
+/*nav导航栏的新增样式，覆盖或修补已有的样式*/
+.navbar-nav{flex:1;}/*让注册按钮单独靠右*/
+.navbar-nav > li:last-child{margin-left: auto;line-height: 37.8px;}
+.navbar-nav > li[class~=active]::after{content: "" ;display: block;height: 55%; border-bottom: 2px #ef494d solid;}/*鼠标选中，有下划线*/
+.navbar-nav > li[class~=active] > .nav-link{color: #ef494d!important;font-weight: 500;}/*鼠标选中时，文字呈红色*/
+
+.nav-link{color:#ef494d;}
+.nav-link:hover{color:#ef494d!important;}
+.navbar-text{background-color:#ef494d;padding:0 10px;border-radius: 5px;line-height: 28px;font-size:14px;color: white!important;}
+.navbar-text:hover{opacity: 0.8;}
+.navbar-text > a{color:white!important;}
+.navbar-text > a:hover{opacity: 0.8;}
+
+/*手机端隐藏底部的导航*/
+@media(max-width: 576px){
+	.container > .text-center{display: none;}
+}
+
+/*首页，三大业务的css*/
+.myCnt{
+	padding:0 !important;/*单独控制container，去掉两边的padding*/
+}
+.ind_tit{
+	font-size: 30px;
+	letter-spacing:3px;
+	text-align:center;
+	line-height: 54px;
+	padding-top: 53px;
+	margin-bottom: 40px;
+	color:#333333;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: url(/template/default/images/index1_20.jpg) no-repeat center bottom;
+}
+.ind_f1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between !important;
+	height:370px;
+}
+.ind_f1 li{
+	position: relative;
+	top:0px;
+	transition: .4s;
+}
+.ind_f1 li:hover{
+	color:#ef494d;
+	top:10px;
+	transition-property: top,color;
+	transition-timing-function: ease;
+	transition-duration: 0.4s; 
+
+}
+.ind_f1 li span{
+	margin:21px 0 13px;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+}
+.ind_f1 li p{
+	line-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	width: 354px;
+	color:#999999;
+}
+.ind_f1 li i{
+	width:80px;
+	height:2px;
+	background-color: #e2e2e2;
+	position:absolute;
+	left:0;
+	bottom: 0;
+	transition-delay: 10ms;
+	transition-duration: 250ms;
+}
+.ind_f1 li i:hover{
+	background-color: #ef494d;
+	width: 354px;
+	transition-property: background-color,width;
+	transition:.4s; 
+}
+.pic img{
+	width: 354px;
+}
+
+
+

@@ -308,7 +308,7 @@ footer .copyright div:last-child a:hover {
   position: absolute;
   top: 30%;
   left: 8px;
-  background: url(../img/leftIcon.png) no-repeat center center;
+  background: url(../images/leftIcon.png) no-repeat center center;
   background-size: 60px 60px;
 }
 
@@ -316,7 +316,7 @@ footer .copyright div:last-child a:hover {
   position: absolute;
   top: 30%;
   right: 8px;
-  background: url(../img/rightIcon.png) no-repeat center center;
+  background: url(../images/rightIcon.png) no-repeat center center;
   background-size: 60px 60px;
 }
 
@@ -409,7 +409,7 @@ a.btn_index:hover {
 }
 
 .tipsWrapper {
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../images/bg2.jpg);
   background-size: 1580px 409px;
   background-repeat: no-repeat;
   height: 409px;
@@ -656,7 +656,7 @@ ul.caseTitle li:visited:after {
 }
 
 .newsPanel > div ul li {
-  background: url(../img/newsItem_icon.png) no-repeat left center;
+  background: url(../images/newsItem_icon.png) no-repeat left center;
 }
 
 .newsPanel > div ul li a {
@@ -906,7 +906,7 @@ ul.caseTitle li:visited:after {
   height: 450px;
   width: 1200px;
   margin-top: 72px;
-  background: url(../img/about_bg.png) no-repeat 50%/cover;
+  background: url(../images/about_bg.png) no-repeat 50%/cover;
 }
 
 .aboutus {
@@ -1037,7 +1037,7 @@ dd {
   left: 50%;
   margin-left: -30px;
   background-color: blue;
-  background: url(../img/img_news.jpg) no-repeat;
+  background: url(../images/img_news.jpg) no-repeat;
 }
 
 .ourAddr {
@@ -1761,6 +1761,110 @@ article .desc p, .sourceLink{
 }
  
 */
+.pages {
+  min-height: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bgWhite {
+  background-color: #f5f8fa;
+}
+
+.bgGray, .bgWhite {
+  height: 560px;
+  position: relative;
+}
+
+.leftPic, .rightText, .leftText, .rightPic {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rightText {
+  margin-left: 596px;
+}
+
+.rightPic {
+  margin-left: 596px;
+}
+
+.leftPic, .leftText {
+  margin-left: 80px;
+}
+
+.leftText, .rightText {
+  width: 580px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h2 {
+  font-size: 26px;
+  color: black;
+}
+
+.h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+}
+
+.features {
+  margin-top: 20px;
+  color: #808080;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.features li > i {
+  background-image: url(../img/tick_gray.png);
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  float: left;
+}
+
+.featuresOne, .featuresTwo {
+  float: left;
+}
+
+.featuresTwo {
+  margin-left: 25px;
+}
+
+.newBtn {
+  background-color: #ef494d;
+  padding: 0 23px;
+  line-height: 38px !important;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 50px !important;
+}
+
+a[class="newBtn"]:link {
+  color: white;
+}
+
+a[class="newBtn"]:visited {
+  color: white;
+}
+
+a[class="newBtn"]:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+a[class="newBtn"]:active {
+  color: white;
+}
+
 /*以下为全局的css语句*/
 p, dl, dt, dd, ol, ul, li, a, header, body, span, div, section, h1, h2, h3, h4, h5, h6 {
   margin: 0;

@@ -135,14 +135,14 @@
 			position: absolute;
 			top: 30%;
 			left: 8px;
-			background: url(../img/leftIcon.png) no-repeat center center;
+			background: url(../images/leftIcon.png) no-repeat center center;
 			background-size: 60px 60px;
 		}
 		&:nth-child(2){
 			position: absolute;
 			top: 30%;
 			right: 8px;
-			background: url(../img/rightIcon.png) no-repeat center center;
+			background: url(../images/rightIcon.png) no-repeat center center;
 			background-size: 60px 60px;
 		}
 	}	
@@ -226,7 +226,7 @@ a.btn_index{ //统一按钮样式
 
 
 .tipsWrapper{
-	background-image: url(../img/bg2.jpg);
+	background-image: url(../images/bg2.jpg);
 	background-size:1580px 409px;
 	background-repeat: no-repeat;
 	height: 409px;
@@ -433,7 +433,7 @@ ul.caseTitle{
 			font-size: 12px;
 			li{
 				//margin-bottom: 2px;
-				background: url(../img/newsItem_icon.png) no-repeat left center;
+				background: url(../images/newsItem_icon.png) no-repeat left center;
 				
 				a{
 					display: inline-block;

@@ -1761,110 +1761,106 @@ article .desc p, .sourceLink{
 }
  
 */
-.pages {
-  min-height: 500px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.ysAll > section:nth-child(2n-1) {
+  background-color: #f8f9fa;
 }
 
-.bgWhite {
-  background-color: #f5f8fa;
+.ysList {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  align-items: center;
 }
 
-.bgGray, .bgWhite {
-  height: 560px;
-  position: relative;
-}
-
-.leftPic, .rightText, .leftText, .rightPic {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.rightText {
-  margin-left: 596px;
-}
-
-.rightPic {
-  margin-left: 596px;
-}
-
-.leftPic, .leftText {
-  margin-left: 80px;
-}
-
-.leftText, .rightText {
-  width: 580px;
-}
-
-.clearfix {
-  clear: both;
-}
-
-h2 {
-  font-size: 26px;
-  color: black;
-}
-
-.h3 {
+.ysList p {
   font-size: 16px;
   line-height: 24px;
-  color: #808080;
+  padding: 5px 0 20px;
 }
 
-.features {
-  margin-top: 20px;
-  color: #808080;
+.ysList h3 {
+  font-size: 26px;
+  color: #333;
+  font-weight: 400;
 }
 
-.features li {
+.ysList div {
+  width: 380px;
+}
+
+.ysList img {
+  width: 100%;
+}
+
+.ysText {
+  max-width: 480px;
+  color: #999;
+}
+
+.ysText ul {
+  column-count: 2;
+}
+
+.ysText ul li {
   margin-bottom: 10px;
 }
 
-.features li > i {
-  background-image: url(../img/tick_gray.png);
-  width: 20px;
-  height: 20px;
+.ysText ul li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/tick_gray.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   margin-right: 10px;
-  float: left;
 }
 
-.featuresOne, .featuresTwo {
-  float: left;
-}
-
-.featuresTwo {
-  margin-left: 25px;
-}
-
-.newBtn {
+.ysText button {
+  cursor: pointer;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #999;
   background-color: #ef494d;
-  padding: 0 23px;
-  line-height: 38px !important;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 50px !important;
-}
-
-a[class="newBtn"]:link {
   color: white;
 }
 
-a[class="newBtn"]:visited {
-  color: white;
+.ysText button:hover {
+  opacity: .9;
 }
 
-a[class="newBtn"]:hover {
-  color: white;
-  opacity: 0.8;
+/*
+.pages {
+	min-height: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+.bgWhite{background-color: #f5f8fa;}
+.bgGray,.bgWhite{height:560px;position:relative;}
+.leftPic,.rightText,.leftText,.rightPic{position: absolute;top:50%;transform:translateY(-50%);}
+.rightText{margin-left: 596px;}
+.rightPic{margin-left: 596px;}
+.leftPic,.leftText{margin-left:80px;}
+.leftText,.rightText{width: 580px;}
+.clearfix{clear: both;}
+h2{font-size: 26px;color:black;}
+.h3{font-size: 16px;line-height: 24px;color:#808080;}
+.features{margin-top:20px;color:#808080;}
+.features li{margin-bottom: 10px;}
+.features li > i{background-image: url(../img/tick_gray.png);width: 20px;height: 20px;margin-right:10px;float:left;}
+.featuresOne,.featuresTwo{float:left;}
+.featuresTwo{margin-left:25px;}
+.newBtn{background-color: #ef494d;padding:0 23px;line-height: 38px!important;font-size: 16px;text-decoration: none;border-radius: 6px;margin-top: 50px!important;}
+a[class="newBtn"]:link{color:white;}
+a[class="newBtn"]:visited{color:white;}
+a[class="newBtn"]:hover{color:white;opacity: 0.8;}
+a[class="newBtn"]:active{color:white;}
 
-a[class="newBtn"]:active {
-  color: white;
-}
-
+*/
 /*以下为全局的css语句*/
 p, dl, dt, dd, ol, ul, li, a, header, body, span, div, section, h1, h2, h3, h4, h5, h6 {
   margin: 0;

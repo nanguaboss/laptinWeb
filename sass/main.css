@@ -1832,19 +1832,50 @@ article .desc p, .sourceLink{
   opacity: .9;
 }
 
-.proListAll {
+.proListAll::after {
+  content: "";
+  display: block;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.proListNav {
+  max-width: 300px;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  float: left;
+}
+
+.proLists {
+  background-color: #f8f9fa;
+  max-width: 870px;
+  margin-left: 20px;
+  float: right;
+}
+
+.proLists img {
+  width: 100%;
+}
+
+.proLists ul {
   display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 5px 10px 10px;
 }
 
-.proListAll section:first-child {
-  flex-shrink: 1;
-  max-width: 300px;
+.proLists ul li {
+  width: 200px;
+  height: 320px;
+  box-sizing: border-box;
+  margin-right: 15px;
+  overflow: hidden;
 }
 
-.proListAll section:last-child {
-  flex-shrink: 2;
+.proLists ul li div:first-child {
+  width: 217px;
 }
 
 /*以下为全局的css语句*/

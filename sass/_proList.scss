@@ -1,11 +1,45 @@
 .proListAll{
-    @include myflex;
-    justify-content: flex-start;
-    section:first-child{
-        flex-shrink: 1;
-        max-width: 300px;
+    &::after{
+        content: "";
+        display: block;
+        @include clearFloat;
     }
-    section:last-child{
-        flex-shrink: 2;
+}
+.proListNav{
+    //flex-shrink: 1;
+    max-width: 300px;
+   // border: $bordertext;
+    box-sizing: border-box;
+    background-color: $containerColor;
+    float: left;
+}
+.proLists{
+    background-color: $containerColor;
+    max-width: 870px;
+    //border: $bordertext;
+    margin-left: 20px;
+    float: right;
+    img{
+        width: 100%;
+    }
+    ul{
+        @include myflex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 10px 5px 10px 10px;
+        li{
+            width: 200px;
+            height: 320px;
+            //border: $bordertext;
+            box-sizing: border-box;
+            margin-right: 15px;
+            overflow: hidden;
+            div:first-child{
+                width: 217px;
+
+                //height: 120px;
+               
+            }
+        }
     }
 }

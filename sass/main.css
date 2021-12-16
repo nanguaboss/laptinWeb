@@ -410,7 +410,6 @@ a.btn_index:hover {
 
 .tipsWrapper {
   background-image: url(../images/bg2.jpg);
-  background-size: 1580px 409px;
   background-repeat: no-repeat;
   height: 409px;
   box-sizing: border-box;
@@ -1833,34 +1832,21 @@ article .desc p, .sourceLink{
   opacity: .9;
 }
 
-/*
-.pages {
-	min-height: 500px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.proListAll {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
 }
-.bgWhite{background-color: #f5f8fa;}
-.bgGray,.bgWhite{height:560px;position:relative;}
-.leftPic,.rightText,.leftText,.rightPic{position: absolute;top:50%;transform:translateY(-50%);}
-.rightText{margin-left: 596px;}
-.rightPic{margin-left: 596px;}
-.leftPic,.leftText{margin-left:80px;}
-.leftText,.rightText{width: 580px;}
-.clearfix{clear: both;}
-h2{font-size: 26px;color:black;}
-.h3{font-size: 16px;line-height: 24px;color:#808080;}
-.features{margin-top:20px;color:#808080;}
-.features li{margin-bottom: 10px;}
-.features li > i{background-image: url(../img/tick_gray.png);width: 20px;height: 20px;margin-right:10px;float:left;}
-.featuresOne,.featuresTwo{float:left;}
-.featuresTwo{margin-left:25px;}
-.newBtn{background-color: #ef494d;padding:0 23px;line-height: 38px!important;font-size: 16px;text-decoration: none;border-radius: 6px;margin-top: 50px!important;}
-a[class="newBtn"]:link{color:white;}
-a[class="newBtn"]:visited{color:white;}
-a[class="newBtn"]:hover{color:white;opacity: 0.8;}
-a[class="newBtn"]:active{color:white;}
 
-*/
+.proListAll section:first-child {
+  flex-shrink: 1;
+  max-width: 300px;
+}
+
+.proListAll section:last-child {
+  flex-shrink: 2;
+}
+
 /*以下为全局的css语句*/
 p, dl, dt, dd, ol, ul, li, a, header, body, span, div, section, h1, h2, h3, h4, h5, h6 {
   margin: 0;

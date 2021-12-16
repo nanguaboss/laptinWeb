@@ -1,0 +1,11 @@
+.proListAll{
+    @include myflex;
+    justify-content: flex-start;
+    section:first-child{
+        flex-shrink: 1;
+        max-width: 300px;
+    }
+    section:last-child{
+        flex-shrink: 2;
+    }
+}
